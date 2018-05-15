@@ -1,6 +1,7 @@
 <!-- This is an HTML comment. Comments allow you to communicate with other programmers using
 text that will be ignored by the computer. -->
 <!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html>
 <head> <!-- The head tag includes important information about the page -->
     <link rel="stylesheet" type="text/css" href="StyleProject.css"> <!-- this is a link to the CSS document which contains layout information -->
     <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
@@ -18,12 +19,12 @@ text that will be ignored by the computer. -->
     <h2> 1. The First Lesson</h2>
 
       <div class="Intro">
-    I've learned how to use <u>simple code</u> to make a website. <br>
+    <p>I've learned how to use <u>simple code</u> to make a website. <br>
     I could for instance quote <a href="www.tweakers.com"> My favorite website</a><br>
     Also I can make a link to a picture and edit the size in html:<br>
     <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/sign-check-icon.png" alt="nope" width="42" height="42"> </img>
-    See. That wasn't to hard.
-      </div class="Intro">
+    See. That wasn't to hard.</p>
+      </div>
 
         <div class="Markup Tags">
 
@@ -31,7 +32,7 @@ text that will be ignored by the computer. -->
     <h4>Examples of Markup Tags</h4>
     <ul> <!-- this is a tag that makes an unordered list -->
       <li>Bold
-    <b> < b > is the tag to define something as bold.</b><br></li>
+    <b> < b > is the tag to define something as bold.</b><br></li> <!-- please notice that all the examples written like < b > are giving errors in the HTML checker. But this is on purposs -->
     <li>Italics
     <em> < em >This is italicized or for emphasis</em></li>
     <li>Break < br > is for line break is considered a void command. It is also an "inline" element.</li>
@@ -43,7 +44,7 @@ text that will be ignored by the computer. -->
   </ul>
         </div>
 
-<div class="Inline Tags">
+<div class="InlineTags">
   <h4>Inline Tags</h4>
     <ul>
       <li>< br ></li>
@@ -61,34 +62,45 @@ text that will be ignored by the computer. -->
     <li>< form ></li>
   </ul>
       </div>
-</div class="First Subject">
+</div>
 
   <div class="Second subject">
         <h2>2. The Second Lesson</h2>
-
       <div class="Stylesheets CSS">
       <h4> CSS </h4>
-      <p>In CSS you write what is called a selector. This defines what elements of the pag a particular style will apply to. You can select an html tag and that rule will apply to all tags on the page. For example if you want to style all paragraphs on the page you simply write:
+      <p>In CSS you write what is called a <b>selector</b>. This defines what elements of the pag a particular style will apply to. You can select an html tag and that rule will apply to all tags on the page. For example if you want to style all paragraphs on the page you simply write:
         <b>p {}</b>
       <br>Inside the brackets you write the style in the form: Attribute colon vallue. example: <b>p {color : red;}</b>
       <br> You can apply a certain style to specific < divs > by using the class you assigned to it.
-      <br>Example: <b>.Markup tags {color:red;}</b>
+      <br>Example: <b>.Markup tags {color:red;}</b></p>
+    </div>
+</div>
 
-<div class="Third subject">
+
+  <div class="Third subject">
       <h2>3. The Third Lesson</h2>
+      <h4 id="BoxMargin">Box Margins</h4>
+    <div id="ImgAndList" class="Box margins">
 
-    <div class="Box margins">
-      <h4>Box Margins</h4>
+      <div id="Image2">
+        <img src="Images/FaceApp_1493029009418.jpg" alt="ShaunProfilePic" width="160">
+      </div>
+        <div id="List">
         <ul>
           <li>Content: Starting in the centre we have our content. It's the image or text on the website. The other layers around it serve to protect it.</li>
           <li>Padding: The padding clears an area around the content.it's affected by the background color of the box.</li>
           <li>Border: Goes around the Padding.</li>
           <li>Margin: The outer layer. Clears an area around the border. It doesn't have a background color and is completely transparant.</li>
         </ul>
-      <br> We will try to resize the box size of the title: "Box Margins" in the CSS document.
+      </div>
+
+
     </div>
+    <p> We will try to resize the box size of the title: "Box Margins" in the CSS document. <br> And We'll try to use displayflex to set these boxes next to each other.<br><b>It Worked!</b></p>
   </div>
 
 
+<!-- I Need to give credits to the notes of Subject 1 (specificly examples of Markup tags, inline tags and block tags) to Marie. A Costudent here at Udacity. Hence the name My-second-project. I had been messing around in my first project so much that there was no structure to it anymore. So I've taken her simple notes from what I call the first subject and then I did subject 2 and 3 completely from my own writing. -->
 
 </body>
+</html>
